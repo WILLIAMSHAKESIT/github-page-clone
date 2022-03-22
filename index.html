@@ -9,14 +9,28 @@
 </head>
 <body>
     <header class="header-parent-container">
-        <span class="text-light">
-            <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github">
-                <path fill="currentColor" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-            </svg>
-        </span>
-        <div class="header-menu">
-            <a class="header-sign-up-btn text-light">Sign up</a>
+        <div class="">
             <span class="text-light">
+                <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github">
+                    <path fill="currentColor" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+            </span>
+            <div class="d-none desktop-menu">
+                <span>Product</span>
+                <span>Team</span>
+                <span>Enterprise</span>
+                <span>Explore</span>
+                <span>Marketplace</span>
+                <span>Pricing</span>
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="d-none header-input">
+                <input placeholder="Search GitHub">
+            </div>
+            <span class="d-none signin-text">Sign in</span>
+            <a class="header-sign-up-btn text-light">Sign up</a>
+            <span class="text-light menu-icon">
                 <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true" class="octicon octicon-three-bars">
                     <path stroke="currentColor" fill="currentColor" fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
                 </svg>
@@ -24,13 +38,23 @@
         </div>
     </header>
     <main class="main-app-container">
-        <div class="text-center main-text">
-            <h1 class="font-weight-bolder main-text-h1">Where the world builds software</h1>
-            <p class="main-text-p">Millions of developers and companies build, ship, and maintain their software on GitHub—the largest and most advanced development platform in the world.</p>
-        </div>
-        <div class="main-inputs">
-            <input class="main-input-style input-style" placeholder="Email address" type="email"/>
-            <button class="main-btn-style">Sign up for GitHub</button>
+        <div class="main-top-div">
+            <div class="text-container">
+                <div class="text-center main-text">
+                    <h1 class="font-weight-bolder main-text-h1">Where the world builds software</h1>
+                    <p class="main-text-p">Millions of developers and companies build, ship, and maintain their software on GitHub—the largest and most advanced development platform in the world.</p>
+                </div>
+                <div class="main-inputs">
+                    <input class="main-input-style input-style" placeholder="Email address" type="email"/>
+                    <button class="main-btn-style">Sign up for GitHub</button>
+                </div>
+            </div>
+            <div class="d-none vid-container">
+                <video loop="" autoplay style="width: 70%;">
+                    <source type="video/mp4; codecs=hevc,mp4a.40.2" src="https://github.githubassets.com/images/modules/site/home/globe-500.hevc.mp4">
+                    <source type="video/mp4; codecs=avc1.4D401E,mp4a.40.2" src="https://github.githubassets.com/images/modules/site/home/globe-500.h264.mp4">
+                </video>
+            </div>
         </div>
         <div class="flex justify-around w-full p-5 mt-4 main-stats">
             <div class="flex items-center font-weight-bold flex-column">
@@ -42,8 +66,12 @@
                 <span class="t-secondary font-weight-bold">Organizations</span>
             </div>
             <div class="flex items-center font-weight-bold flex-column d-none">
-                <span class="text-light main-total-stat">73+ million</span>
-                <span class="t-secondary">Developers</span>
+                <span class="text-light main-total-stat">200+ million</span>
+                <span class="t-secondary">Repositories</span>
+            </div>
+            <div class="flex items-center font-weight-bold flex-column d-none">
+                <span class="text-light main-total-stat">84%</span>
+                <span class="t-secondary">Fortune 100</span>
             </div>
         </div>
         <div class="main-img-container">
@@ -56,12 +84,22 @@
             <div class="flex items-center in-main-sec-text flex-column">
                 <span>Build like the best with GitHub Enterprise</span>
                 <span>Take collaboration to the next level with security and administrative features built for teams.</span>
-                <button>
-                    Start a free trial
-                </button>
-                <span>Contact Sales</span>
+                <div class="flex items-center flex-column btn-cont">
+                    <button>
+                        Start a free trial
+                    </button>
+                    <span class="font-weight-bold t-dark">Contact Sales</span>
+                </div>
             </div>
             <img alt="" class="main-secondary-img" src="https://github.githubassets.com/images/modules/site/home/enterprise-city-w-logos.jpg">
+        </div>
+        <div class="d-none main-secondary-container-nav">
+            <span>Code</span>
+            <span>collaborate</span>
+            <span>Develop</span>
+            <span>Automate</span>
+            <span>Secure</span>
+            <span>Community</span>
         </div>
     </section>
     <section class="second-section">

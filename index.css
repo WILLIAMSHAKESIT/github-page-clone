@@ -1,5 +1,5 @@
 :root {
-    --color-fg-default: #080c24;
+    --color-fg-default: #06091c;
     --color-fg-default-text: #24292f;
     --color-white:#ffffff;
     --gray-sec:#d0d6df;
@@ -325,10 +325,16 @@ input:focus {
     flex-direction: column;
     align-items: center;
 }
+.main-app-container .main-top-div .text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .main-app-container .main-img-container .main-img{
   position: relative !important;
-  top: 80px !important;
+  bottom: -120px !important;
   width: 70%;
+  z-index: 500;
 }
 .main-app-container .main-img-container .main-svg{
   position: relative !important;
@@ -389,6 +395,8 @@ input:focus {
     flex-direction: column;
     align-items: center;
     padding-bottom: 10em;
+    position: relative;
+    z-index: 200;
 }
 .main-secondary-container .in-main-secondary{
     padding: 2em;
@@ -422,6 +430,7 @@ input:focus {
     font-size: 1rem;
     font-weight: 600;
     line-height: 1;
+    color: #343a40;
     background-color: var(--color-white);
     border: 0;
     border-radius: 0.375rem;
@@ -1365,4 +1374,191 @@ footer .ending-text-cont .links span{
 footer .ending .img-cont div{
   height: 25px;
   width: 25px;
+}
+
+
+
+
+
+
+/* desktop view */
+@media only screen and (min-width: 1013px) {
+  .header-parent-container{
+    padding: 1.4em 4em;
+  }
+  header div{
+    display: flex;
+    align-items: center !important;
+    position: relative;
+    z-index: 100;
+  }
+  header .desktop-menu{
+    display: flex !important;
+    align-items: center !important;
+  }
+  header .desktop-menu span{
+    margin-left: 30px;
+    color: var(--color-white);
+  }
+  header .header-menu .menu-icon{
+    display: none;
+  }
+  header .header-menu .signin-text{
+    display: block !important;
+    color: var(--color-white);
+    margin-right: 1em;
+  }
+  header .header-menu .header-input{
+    display: block !important;
+    margin-right: 1em !important;
+  }
+  header .header-menu .header-input input{
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    color: var(--color-white) !important;
+    background-color: rgba(191, 191, 191, 0.201);
+  }
+  .main-app-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-app-container::before{
+    content: "";
+    position: absolute;
+    z-index: 90;
+    top: 70%;
+    bottom: 0;
+    left: 50%;
+    width: 200%;
+    height: 70%;
+    transform: translate(-50%, -50%);
+    background-image: url("https://github.githubassets.com/images/modules/site/home/hero-glow.svg");
+  }
+  .main-app-container .main-text{
+    text-align: left !important;
+  }
+  .main-app-container .main-top-div{
+    position: relative !important;
+    width: 100%;
+    height: calc(100vh - 400px);
+    left: 5em;
+    padding: 0 4em;
+  }
+  .main-app-container .main-top-div .text-container{
+    text-align: left;
+  }
+  .main-app-container .main-text .main-text-h1{
+    font-size: 72px !important;
+    line-height: 76px !important;
+  }
+  .main-app-container .main-text .main-text-p{
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+  .main-app-container .main-top-div .text-container{
+    position: absolute;
+    width: 50%;
+    z-index: 99;
+  }
+  .main-app-container .main-top-div .text-container .main-inputs{
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0;
+    width: 100%;
+  }
+  .main-app-container .main-top-div .text-container .main-inputs .input-style,
+  .main-app-container .main-top-div .text-container .main-inputs .main-input-style{
+    width:45% !important;
+  }
+  .main-app-container .main-top-div .text-container .main-inputs .main-btn-style{
+    width: 30%;
+    margin-top: 0 !important;
+    margin-left: 2em;
+    height: 50px !important;
+  }
+  .main-app-container .vid-container{
+    display: block !important;
+    position: relative;
+    opacity: .5;
+    top: -12em;
+    right: 0;
+    transform: translateX(30%)
+  }
+  .main-app-container .main-stats{
+    position: absolute;
+    left: 3em;
+    right: 0;
+    bottom: 3em;
+    display: flex;
+    justify-content: start !important;
+    align-items: stretch !important;
+  }
+  .main-app-container .main-stats div{
+    padding-right: 6em;
+    display: flex !important;
+    align-items: start !important;
+    justify-content: start !important;
+    flex-direction: column !important;
+  }
+  .main-app-container .main-img-container{
+    position: relative;
+    z-index: 1000;
+  }
+  .main-app-container .main-img-container .main-img{
+    width: 35%;
+    position: absolute;
+    right: 0;
+    bottom: -10em;
+    margin-right: -55em;
+  }
+  .main-secondary-container{
+    position: relative;
+    height: calc(100vh - 200px);
+    padding: 0 4em 7em 4em;
+  }
+  .main-secondary-container .in-main-secondary{
+    position: relative;
+    display: flex;
+    border-radius: 8px;
+  }
+  .main-secondary-container .in-main-secondary .in-main-sec-text{
+    display: flex !important;
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    max-width: 350px;
+  }
+  .main-secondary-container .in-main-secondary .in-main-sec-text span{
+    text-align: left !important;
+  }
+  .main-secondary-container .in-main-secondary .in-main-sec-text span:nth-child(1){
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .main-secondary-container .in-main-secondary .in-main-sec-text span:nth-child(2){
+    margin-top: 5px;
+  }
+  .main-secondary-container .in-main-secondary .in-main-sec-text .btn-cont{
+    display: flex !important;
+    flex-direction: row !important;
+  }
+  .main-secondary-container .in-main-secondary .in-main-sec-text .btn-cont span{
+    margin-left: 2em;
+  }
+  .main-secondary-container .in-main-secondary .main-secondary-img{
+    width: 70% !important;
+  }
+  .main-secondary-container .main-secondary-container-nav{
+    padding: 2em;
+    position: sticky !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 89%;
+    top:0;
+    font-size: 18px;
+  }
 }
