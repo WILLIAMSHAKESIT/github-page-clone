@@ -24,6 +24,11 @@ html,body{
 }
 
 /* global classes */
+.home-branch{
+  left: calc(8.33333% - 1.5rem);
+  width: calc(8.33333% + 0.125rem);
+  height: 8.875rem;
+}
 .footer-cards{
   margin-left: 1em;
   display: flex;
@@ -1477,7 +1482,7 @@ footer .ending .img-cont div{
   .main-app-container .main-top-div .text-container .main-inputs .main-btn-style{
     width: 30%;
     margin-top: 0 !important;
-    margin-left: 2em;
+    margin-left: 8px;
     height: 50px !important;
   }
   .main-app-container .vid-container{
@@ -1518,7 +1523,7 @@ footer .ending .img-cont div{
   .main-secondary-container{
     position: relative;
     height: calc(100vh - 200px);
-    padding: 0 4em 7em 4em;
+    padding: 0 4em 0em 4em;
   }
   .main-secondary-container .in-main-secondary{
     position: relative;
@@ -1551,14 +1556,71 @@ footer .ending .img-cont div{
   .main-secondary-container .in-main-secondary .main-secondary-img{
     width: 70% !important;
   }
-  .main-secondary-container .main-secondary-container-nav{
-    padding: 2em;
+  .nav-container{
+    padding: 2em 10em;
     position: sticky !important;
+    position: -webkit-sticky;
+    top: 0 !important;
     display: flex !important;
     align-items: center;
     justify-content: space-between;
-    width: 89%;
-    top:0;
+    width: auto;
     font-size: 18px;
+    background-color: var(--color-white);
+    z-index: 2000;
+  }
+  .nav-container span{
+    opacity: .8;
+  }
+  .second-section{
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  .second-section h2{
+    font-size: 64px !important;
+    line-height: 68px !important;
+    max-width: 600px;
+    margin-left: 50px;
+  }
+  .second-section li:nth-child(1) h3{
+    max-width: 500px;
+    font-size: 24px !important;
+    margin-top: 0;
+  }
+  .second-section li:nth-child(1){
+    padding-top: 0;
+  }
+  .second-section li:nth-child(5) .second-sec-li-img{
+    width: 100%;
+    position: relative;
+  }
+  .second-section  .second-sec-title {
+    max-width:40% ;
+    margin-left: -6em;
+  }
+  .second-section  .second-sec-title h2{
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .second-section .home-git-log-dark li:nth-child(7) .second-sec-li-seven-cont{
+    display: flex !important;
+    flex-direction:row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .section-three{
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  .section-three .section-two-line{
+    margin-top: 0;
+  }
+  .section-three ul li:nth-child(2),
+  .section-three ul li:nth-child(3),
+  .section-three ul li:nth-child(4),
+  .section-three ul li:nth-child(5),
+  .section-three ul li:nth-child(6),
+  .section-three ul li:nth-child(7){
+    margin-left: 6em;
   }
 }
