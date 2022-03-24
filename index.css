@@ -698,12 +698,14 @@ input:focus {
   margin-top: 3em;
   box-shadow: 0 0 0 1px rgb(53 72 91 / 14%), 0 2px 2px rgb(0 0 0 / 3%), 0 4px 4px rgb(0 0 0 / 4%), 0 10px 8px rgb(0 0 0 / 5%), 0 15px 15px rgb(0 0 0 / 6%), 0 30px 30px rgb(0 0 0 / 7%), 0 70px 65px rgb(0 0 0 / 9%);
   height: auto;
+  border-radius: 5px;
 }
 .section-three .section-three-ul li:nth-child(3) .sec-three-third-div div img,
 .section-three .section-three-ul li:nth-child(4) .sec-three-third-div div img,
 .section-three .section-three-ul li:nth-child(5) .sec-three-third-div div img{
   width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 .iphone-home{
   max-width: 280px;
@@ -753,7 +755,6 @@ input:focus {
   background-color: #0c162d;
   border-radius: 5px;
 }
-
 
 .section-four div ul li::marker{
   content: "";
@@ -1617,5 +1618,115 @@ footer .ending .img-cont div{
   .section-three ul li:nth-child(6),
   .section-three ul li:nth-child(7){
     margin-left: 6em;
+  }
+  .section-three .curve-line{
+    margin-top: 3em;
+    margin-left: 14px;
+    width: 100px;
+    display: block !important;
+  }
+  .section-three .curve-line-two{
+    display: block !important;
+    width: 100px;
+    position: absolute;
+    margin-left: -97px;
+    margin-bottom: -140px;
+    bottom: 0;
+  }
+  .section-three .li-two{
+    margin-top: 100px !important;
+  }
+  .section-three .section-two-line{
+    position: absolute;
+    margin-top: 70px;
+    top: 0;
+    margin-left: -25px;
+    background-color: var(--gray-sec);
+    width: 2px !important;
+    height:100%;
+    opacity: 1;
+  }
+  .section-three .section-two-line-two{
+    position: absolute;
+    margin-top: 230px;
+    top: 0;
+    margin-left: 70px;
+    background-color: var(--gray-sec);
+    width: 2px !important;
+    height: calc(100% - 1300px);
+    opacity: 1;
+  }
+  .section-three .section-three-ul .li-two .sec-three-avatars-cont .three-h2{
+    max-width: 65%;
+    font-size: 64px !important;
+    line-height: 68px !important;
+  }
+  .section-three .li-three .sec-three-third-div,
+  .section-three .li-four .sec-three-third-div,
+  .section-three .li-five .sec-three-third-div{
+    display: flex !important;
+    flex-direction: row !important;
+    font-size: 24px !important;
+    line-height: 32px !important;
+    align-items: center !important;
+    justify-content: space-between;
+  }
+  .section-three .li-three .li-three-l-s{
+    margin-top: 40px !important;
+  }
+  .section-three .section-three-ul .li-three,
+  .section-three .section-three-ul .li-four,
+  .section-three .section-three-ul .li-five{
+    margin-top: 100px;
+  }
+  .section-three .section-three-ul .li-three .sec-three-third-div div{
+    margin-top: 0 !important;
+  }
+  .section-three .li-three .sec-three-third-div h3{
+    max-width: 42%
+  }
+  .section-three .li-four .sec-three-third-div h3{
+    max-width: 50%;
+  }
+  .section-three .li-five .sec-three-third-div h3{
+    max-width: 50%;
+  }
+  .section-three .li-three .sec-three-third-div img{
+    width: 500px !important;
+  }
+  .section-three .li-four .li-four-l-s{
+    margin-top: 220px !important;
+  }
+  .section-three .li-four .sec-three-third-div img{
+    width: 500px !important;
+  }
+  .section-three .li-five .sec-three-third-div img{
+    width: 500px !important;
+  }
+  .section-three .li-five .li-five-l-s{
+    margin-top: 210px !important;
+  }
+  .section-three .li-seven .li-seven-main-cont{
+    margin-top: 10em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .section-three .section-three-ul .section-three-bg-type-cont{
+    height: auto !important;
+    width: 100%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+  }
+  .section-three .section-three-ul .section-three-bg-type-cont .overlapping-img{
+    height: 165% !important;
+    width: 120% !important;
+    top: -2em !important;
+    right: -10em !important;
+    box-shadow: 0 0 0 1px rgb(53 72 91 / 14%), 0 2.75px 2.21px rgb(0 0 0 / 7%), 0 6.65px 5.32px rgb(0 0 0 / 4%), 0 12.5px 10px rgb(0 0 0 / 3%), 0 22px 18px rgb(0 0 0 / 3%), 0 42px 33.4px rgb(0 0 0 / 2%), 0 100px 80px rgb(0 0 0 / 2%);
+  }
+  .section-three .section-three-ul .section-three-bg-type-cont .section-three-bg-type{
+    width: 400px;
   }
 }
