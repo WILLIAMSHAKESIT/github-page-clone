@@ -1712,6 +1712,14 @@ footer .ending .img-cont div{
     flex-direction: row;
     align-items: center;
   }
+  .section-three .li-seven .li-seven-main-cont .phone-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-three .li-seven .li-seven-main-cont .phone-container .iphone-home{
+    margin-left: -100px;
+  }
   .section-three .section-three-ul .section-three-bg-type-cont{
     height: auto !important;
     width: 100%;
