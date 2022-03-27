@@ -72,5 +72,15 @@ classList.forEach(item =>{
     observer.observe(document.querySelector(item.parentClass));
 })
 
+function showSideBar() {
+    let element = document.getElementById("side-bar-menu");
+    element.classList.add("side-bar-menu-show");
+    element.classList.remove("side-bar-menu-hide");
+}
 
-console.log(document.body.clientHeight)
+function hideSideBar() {
+    let element = document.getElementById("side-bar-menu");
+    element.classList.remove("side-bar-menu-show");
+    element.classList.add("side-bar-menu-hide");;
+}
+

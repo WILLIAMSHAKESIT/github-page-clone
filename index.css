@@ -305,11 +305,84 @@ input:focus {
   justify-content: space-between;
   background-color: transparent;
 }
+.header-parent-container .side-bar-menu-show{
+  width: 300px;
+  height: 100%;
+  background-color: var(--color-white);
+  display: block !important;
+  position: fixed;
+  right: 0;
+  z-index: 3000;
+  transform: translateX(0) !important;
+  top:0;
+}
+
+.header-parent-container .side-bar-menu-hide{
+  width: 300px;
+  height: 100%;
+  background-color: var(--color-white);
+  display: block !important;
+  position: fixed;
+  right: 0;
+  z-index: 3000;
+  transform: translateX(100%) !important;
+}
+.header-parent-container .side-bar-menu-show .close-icon-div{
+  background-color: #f7f7f795;
+  padding: 1em;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  border-bottom: 1px solid var(--color-border-default);
+}
+.header-parent-container .side-bar-menu-show .close-icon{
+  cursor: pointer;
+}
+.header-parent-container .side-bar-menu-show .side-bar-links{
+  padding: 0 10px;
+}
+.header-parent-container .side-bar-menu-show .side-bar-links div:not(.inputs,.sign-btns){
+  border-bottom: 1px solid var(--color-border-default);
+  padding: 1em 2px;
+}
+.header-parent-container .side-bar-menu-show .side-bar-links .with-icon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-parent-container .side-bar-menu-show .side-bar-links .inputs{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+.header-parent-container .side-bar-menu-show .side-bar-links .inputs .input-text{
+  border: 1px solid var(--color-border-default);
+  width: 90%;
+  border-radius: 5px;
+  padding: .6em;
+}
+.header-parent-container .side-bar-menu-show .side-bar-links .inputs .sign-btns{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+}
+.header-parent-container .side-bar-menu-show .side-bar-links .inputs .sign-btns span:nth-child(2){
+  border: 1px solid var(--color-border-default);
+  padding: 6px;
+  border-radius: 5px;
+}
 .header-menu{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: auto;
+}
+header .header-menu .menu-icon{
+  cursor: pointer;
 }
 .header-sign-up-btn{
     padding: 5px 8px;
@@ -1441,6 +1514,9 @@ footer .ending .img-cont div{
 @media only screen and (min-width: 1013px) {
   .header-parent-container{
     padding: 1.4em 4em;
+  }
+  .header-parent-container .side-bar-menu{
+    display: none;
   }
   header div{
     display: flex;

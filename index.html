@@ -30,11 +30,56 @@
             </div>
             <span class="d-none signin-text">Sign in</span>
             <a class="header-sign-up-btn text-light">Sign up</a>
-            <span class="text-light menu-icon">
+            <span class="text-light menu-icon" onclick="showSideBar()">
                 <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true" class="octicon octicon-three-bars">
                     <path stroke="currentColor" fill="currentColor" fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
                 </svg>
             </span>
+        </div>
+        <div class="d-none side-bar-menu-hide" id="side-bar-menu">
+            <div class="close-icon-div">
+                <span class="close-icon" onclick="hideSideBar()">
+                    <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-x color-fg-muted">
+                        <path fill-rule="evenodd" d="M5.72 5.72a.75.75 0 011.06 0L12 10.94l5.22-5.22a.75.75 0 111.06 1.06L13.06 12l5.22 5.22a.75.75 0 11-1.06 1.06L12 13.06l-5.22 5.22a.75.75 0 01-1.06-1.06L10.94 12 5.72 6.78a.75.75 0 010-1.06z"></path>
+                    </svg>
+                </span>
+            </div>
+            <div class="side-bar-links">
+                <div class="with-icon">
+                    <span>Product</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="currentColor" d="M831.872 340.864L512 652.672L192.128 340.864a30.592 30.592 0 0 0-42.752 0a29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728a30.592 30.592 0 0 0-42.752 0z"/></svg>
+                    </span>
+                </div>
+                <div>
+                    Team
+                </div>
+                <div>
+                    Enterprise
+                </div>
+                <div class="with-icon">
+                    <span>Explore</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="currentColor" d="M831.872 340.864L512 652.672L192.128 340.864a30.592 30.592 0 0 0-42.752 0a29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728a30.592 30.592 0 0 0-42.752 0z"/></svg>
+                    </span>
+                </div>
+                <div>
+                    Marketplace
+                </div>
+                <div class="with-icon">
+                    <span>Pricing</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="currentColor" d="M831.872 340.864L512 652.672L192.128 340.864a30.592 30.592 0 0 0-42.752 0a29.12 29.12 0 0 0 0 41.6L489.664 714.24a32 32 0 0 0 44.672 0l340.288-331.712a29.12 29.12 0 0 0 0-41.728a30.592 30.592 0 0 0-42.752 0z"/></svg>
+                    </span>
+                </div>
+                <div class="inputs">
+                    <input class="input-text" placeholder="Search GitHub" type="text">
+                    <div class="flex sign-btns">
+                        <span>Sign in</span>
+                        <span>Sign up</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main class="main-app-container">
@@ -295,7 +340,7 @@
                     <div class="phone-container">
                         <div class="iphone-home">
                             <img style="position: absolute;margin-top:1em;left: 50;right: 50;" src="https://github.githubassets.com/images/modules/site/home/iphone-notch.svg" alt="iPhone notch">
-                            <video style="height:auto;width: 100%;border-radius:  2.6875rem;" autoplay>
+                            <video style="height:auto;width: 100%;border-radius:  2.6875rem;" loop autoplay>
                                 <source src="https://github.githubassets.com/images/modules/site/home/gh-mobile.h264.mp4" type="video/mp4">
                                 <source src="https://github.githubassets.com/images/modules/site/home/gh-mobile.h264.mp4" type="video/ogg">
                                 Your browser does not support HTML video.
@@ -427,7 +472,7 @@
             <span>Setup CI/CD, enhance your DevOps, and script your entire workflow with GitHub Actions.<span class="text-accent"> Kick off automated workflows with GitHub events like push, issue creation, merge, and release.</span></span>
             <div class="vid-container box-dow-one">
                 <img src="https://github.githubassets.com/images/modules/site/home/actions-autocomplete.png" class="width-full" alt="GitHub Actions web editor editing workflow file showcasing autocomplete">
-                <video loop="" muted="" autoplay>
+                <video loop muted="" autoplay>
                     <source type="video/mp4; codecs=hevc,mp4a.40.2" src="https://github.githubassets.com/images/modules/site/home/actions-autocomplete.hevc.mp4">
                     <source type="video/mp4; codecs=avc1.4D401E,mp4a.40.2" src="https://github.githubassets.com/images/modules/site/home/actions-autocomplete.h264.mp4">
                 </video>
