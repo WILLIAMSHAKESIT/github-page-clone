@@ -53,7 +53,7 @@ let classList = [
         querySelector:'.section-three-bg-type',
         animationClass:'fade-to-left',
         parentClass:'.li-seven-main-cont'
-    }
+    },
 ]
 
 classList.forEach(item =>{
@@ -65,7 +65,7 @@ classList.forEach(item =>{
             square.classList.add(item.animationClass);
             return; // if we added the class, exit the function
         }
-            // We're not intersecting, so remove the class!
+            // not intersecting
             square.classList.remove(item.animationClass);
         });
     });
