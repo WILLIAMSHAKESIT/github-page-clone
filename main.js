@@ -72,6 +72,17 @@ classList.forEach(item =>{
     observer.observe(document.querySelector(item.parentClass));
 })
 
+let observer = new IntersectionObserver(entries=> {
+	// no intersection with screen
+	if(entries[0].intersectionRatio === 0)
+		document.querySelector(".nav-container").classList.add("flex");
+	// fully intersects with screen
+	else if(entries[0].intersectionRatio === 1)
+		document.querySelector(".nav-container").classList.remove("flex");
+}, { threshold: [0,1] });
+
+observer.observe(document.querySelector("#observe-stick"));
+
 function showSideBar() {
     let element = document.getElementById("side-bar-menu");
     element.classList.add("side-bar-menu-show");

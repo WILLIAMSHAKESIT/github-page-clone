@@ -1,5 +1,5 @@
 :root {
-    --color-fg-default: #06091c;
+    --color-fg-default: #080c24;
     --color-fg-default-text: #24292f;
     --color-white:#ffffff;
     --gray-sec:#d0d6df;
@@ -153,7 +153,7 @@ input:focus {
     display: none !important;
 }
 .flex{
-    display: flex;
+    display: flex !important;
 }
 .justify-between{
     justify-content: space-between !important;
@@ -272,6 +272,7 @@ input:focus {
     position: sticky !important;
   }
 .main-btn-style-two {
+  white-space: nowrap;
   width: 100%;
   height: 40px !important;
   margin-top: 8px;
@@ -529,6 +530,26 @@ header .header-menu .menu-icon{
     bottom: 0;
     right: 0;
     position: absolute;
+}
+.nav-container{
+  height: max-content;
+  background-color: var(--color-white);
+  position: sticky;
+  top: -1px;
+  z-index: 2000;
+  padding: .5em 5px;
+  box-shadow: 0 3px 6px rgba(140,149,159,0.15),0 1px 1px rgba(0,0,0,.1);
+}
+.nav-container span{
+  font-size: 17px;
+  padding: 1rem;
+}
+.nav-container span:nth-child(2),
+.nav-container span:nth-child(3),
+.nav-container span:nth-child(4),
+.nav-container span:nth-child(5),
+.nav-container span:nth-child(6){
+  display: none;
 }
 .second-section{
   height: auto;
@@ -1684,7 +1705,7 @@ footer .ending .img-cont div{
     width: 70% !important;
   }
   .nav-container{
-    padding: 2em 10em;
+    padding: 1em 10em;
     position: sticky !important;
     position: -webkit-sticky !important;
     top: 0 !important;
@@ -1699,6 +1720,7 @@ footer .ending .img-cont div{
   }
   .nav-container span{
     opacity: .8;
+    display: block !important;
   }
   .second-section{
     padding-left: 4em;
@@ -1916,5 +1938,47 @@ footer .ending .img-cont div{
     top: 10;
     width: 70%;
     transform: translateX(80%);
+  }
+  .section-eight .main-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 70px;
+  }
+  .section-eight .main-div .cards-cont{
+    transform: translateX(50%);
+  }
+  .section-eight .main-div .cont-title h1{
+    font-size: 72px !important;
+    line-height: 76px !important;
+  }
+  .section-eight .main-div .cont-title h1,
+  .section-eight .main-div .cont-title h3{
+    text-align: left;
+    width: 590px;
+  }
+  .section-eight .main-div .cont-title{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: -6rem;
+  }
+  .section-eight .main-div .cont-title .buttons-bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: fit-content;
+  }
+  .section-eight .main-div .cards-cont .cards-one{
+    margin-left: -7em;
+  }
+  .section-eight .main-div .cards-cont .cards-two{
+    margin-left: -14em;
+  }
+  .section-eight .main-div .cards-cont .cards-three{
+    margin-left: -20em;
+  }
+  .section-eight .main-div .cards-cont .cards-four{
+    margin-left: -30em;
   }
 }
